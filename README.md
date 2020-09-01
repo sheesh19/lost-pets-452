@@ -1,24 +1,10 @@
-# README
+# README || CRUD REVIEW
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   HTTP VERB       CONTROLLER ACTION       ACTIVERECORD METHOD
+1. get             index                        .all
+2. get             show                      .find(id)
+3. delete          destroy                  .destroy
+4. post            create                   .create
+5. get             new                      .new
+6. patch           update                   .update
+7. get             edit                     .find(id)

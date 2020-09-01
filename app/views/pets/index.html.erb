@@ -1,0 +1,9 @@
+<h1>See All Pets</h1>
+
+<ul>
+    <% @pets.each do |pet| %>
+        <li><%= link_to pet.name, pet_path(pet) %></li>
+    <% end %>
+</ul>
+
+<%= link_to "Found a New Pet!!", new_pet_path, class: 'btn btn-info' %>

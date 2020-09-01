@@ -1,0 +1,10 @@
+<h2>Pet</h2>
+
+<p>Name: <%= @pet.name %></p>
+<p>Address: <%= @pet.address %></p>
+<p>Species: <%= @pet.species %></p>
+<p>Found <%= @pet.found_days_ago %> days ago</p>
+
+<%= link_to "Back to Home", pets_path, class: 'btn btn-info' %>
+<%= link_to "Edit Pet", edit_pet_path(@pet), class: 'btn btn-info' %>
+<%= link_to "Pet Found a Home", pet_path(@pet), method: :delete, class: 'btn btn-danger' %>
